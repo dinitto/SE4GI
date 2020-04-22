@@ -189,7 +189,7 @@ def get_post(id):
     post = cur.fetchone()
 
     if post is None:
-        abort(404, "Post id {0} doesn't exist.".format(id))
+        abort(404, "Post id {} doesn't exist.".format(id))
 
     if post[1] != g.user[0]:
         abort(403)
