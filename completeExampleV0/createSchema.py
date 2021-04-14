@@ -46,7 +46,7 @@ for command in cleanup :
 for command in commands :
     cur.execute(command)
     print('execute command')
-print(cur.fetchall())
+
 
 cur.close()
 conn.commit()
